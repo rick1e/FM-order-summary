@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+html,
+body,
+#root{
+  height:100%
+}
+body{
+  background-color: #F5F7FF;
+}
 .App {
   text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color:#1F2F56
 }
 
 .App-logo {
@@ -35,4 +51,95 @@
   to {
     transform: rotate(360deg);
   }
+}
+#container{
+  width: 360px;
+  background: white;
+  border-radius: 20px 20px;
+}
+#hero img{
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+#summary-body{
+  padding: 20px;
+  padding-top: 0;
+}
+#summary-text p{
+  
+  text-align: center;
+  margin-bottom: 25px;
+
+}
+#order-item{
+  display:flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background: #F5F7FF;
+padding: 15px;
+border-radius: 10px;
+}
+.right-side{
+  display: flex;
+  align-items: center;
+}
+.music-icon{
+  width: 40px;
+  height: 40px;
+  background: #E0E8FF;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.music-icon img{
+  width: 40px;
+}
+h3{
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: left;
+  font-size: 16px;
+  color:#1F2F56;
+}
+
+p{
+  font-size: 16px;
+  color: #7280A7;
+  margin: 0;
+  text-align: left;
+}
+a:hover{
+  color: #9790f0;
+  text-decoration:none;
+}
+
+.primaryButton{
+    cursor: pointer;
+    width: 100%;
+    color: white;
+    font-weight: 800;
+    background: #3829E0;
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 14px 15px rgb(56 41 224 / 25%);
+}
+.primaryButton:hover{
+  background: #9790f0
+}
+
+.secondaryButton{
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: white;
+    padding: 0px;
+    margin: 10px 0;
+    font-weight: 800;
+    color: #7280A7;
+}
+.secondaryButton:hover{
+  color:#1F2F56
 }
